@@ -37,9 +37,8 @@
 | `GETTING_STARTED.md` | ADDED — concise task-to-module routing and verification path |
 | `scripts/run_zap_baseline.py` | IMPLEMENTED — authorized-target wrapper refuses execution without ZAP and explicit `--authorized` |
 | `python3 -m unittest discover -s tests -p 'test_*.py'` | PASS — specialist wrapper authorization and agent-inventory tests included |
-| `python3 scripts/generate_style_catalog_images.py` | PASS — generated 26 repository-owned SVG references for every design style catalog entry |
-| SVG XML parsing check | PASS — all 26 generated style references parsed successfully |
-| `python3 tests/validate_docs.py` | PASS — README gallery links and complete style catalog references validated |
+| Style catalog image inventory | PASS — README uses the 11 supplied JPEG references; no generated style SVGs remain |
+| `python3 tests/validate_docs.py` | PASS — README JPEG gallery links validated |
 | `LICENSE` and README license section | PASS — MIT license file, badge, and copyright holder link are present |
 
 ## Scope

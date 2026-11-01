@@ -191,61 +191,30 @@ reference. These are visual starting points, not production screenshots:
 
 <table>
   <tr>
-    <td align="center"><img src="./docs/images/styles/skeuomorphism.svg" alt="Skeuomorphism dashboard example" width="100%"><br><strong>Skeuomorphism</strong></td>
-    <td align="center"><img src="./docs/images/styles/minimalism.svg" alt="Minimalism dashboard example" width="100%"><br><strong>Minimalism</strong></td>
+    <td align="center"><img src="./docs/images/styles/sku.jpeg" alt="Skeuomorphism dashboard example" width="100%"><br><strong>Skeuomorphism</strong></td>
+    <td align="center"><img src="./docs/images/styles/minimilism.jpeg" alt="Minimalism dashboard example" width="100%"><br><strong>Minimalism</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/styles/glassmorphism.svg" alt="Glassmorphism dashboard example" width="100%"><br><strong>Glassmorphism</strong></td>
-    <td align="center"><img src="./docs/images/styles/claymorphism.svg" alt="Claymorphism dashboard example" width="100%"><br><strong>Claymorphism</strong></td>
+    <td align="center"><img src="./docs/images/styles/glassmorphism.jpeg" alt="Glassmorphism dashboard example" width="100%"><br><strong>Glassmorphism</strong></td>
+    <td align="center"><img src="./docs/images/styles/claymorphism.jpeg" alt="Claymorphism dashboard example" width="100%"><br><strong>Claymorphism</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/styles/neumorphism.svg" alt="Neumorphism dashboard example" width="100%"><br><strong>Neumorphism</strong></td>
-    <td align="center"><img src="./docs/images/styles/neo-brutalism.svg" alt="Neo-brutalism dashboard example" width="100%"><br><strong>Neo-brutalism</strong></td>
+    <td align="center"><img src="./docs/images/styles/Neumorphism.jpeg" alt="Neumorphism dashboard example" width="100%"><br><strong>Neumorphism</strong></td>
+    <td align="center"><img src="./docs/images/styles/Neo-brutalism.jpeg" alt="Neo-brutalism dashboard example" width="100%"><br><strong>Neo-brutalism</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/styles/bento-grid.svg" alt="Bento Grid dashboard example" width="100%"><br><strong>Bento Grid</strong></td>
-    <td align="center"><img src="./docs/images/styles/retro-y2k.svg" alt="Retro Y2K dashboard example" width="100%"><br><strong>Retro Y2K</strong></td>
+    <td align="center"><img src="./docs/images/styles/Bento Grid..jpeg" alt="Bento Grid dashboard example" width="100%"><br><strong>Bento Grid</strong></td>
+    <td align="center"><img src="./docs/images/styles/Retro Y2K.jpeg" alt="Retro Y2K dashboard example" width="100%"><br><strong>Retro Y2K</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/styles/liquid-glass.svg" alt="Liquid Glass dashboard example" width="100%"><br><strong>Liquid Glass</strong></td>
-    <td align="center"><img src="./docs/images/styles/flat-design.svg" alt="Flat Design dashboard example" width="100%"><br><strong>Flat Design</strong></td>
+    <td align="center"><img src="./docs/images/styles/Liquid Glass.jpeg" alt="Liquid Glass dashboard example" width="100%"><br><strong>Liquid Glass</strong></td>
+    <td align="center"><img src="./docs/images/styles/Flat Design.jpeg" alt="Flat Design dashboard example" width="100%"><br><strong>Flat Design</strong></td>
   </tr>
   <tr>
-    <td align="center"><img src="./docs/images/styles/material-design.svg" alt="Material Design dashboard example" width="100%"><br><strong>Material Design</strong></td>
-    <td align="center"><img src="./docs/images/styles/material-you.svg" alt="Material You dashboard example" width="100%"><br><strong>Material You</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/fluent-design.svg" alt="Fluent Design dashboard example" width="100%"><br><strong>Fluent Design</strong></td>
-    <td align="center"><img src="./docs/images/styles/swiss-style.svg" alt="Swiss Style dashboard example" width="100%"><br><strong>Swiss Style</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/editorial-design.svg" alt="Editorial Design dashboard example" width="100%"><br><strong>Editorial Design</strong></td>
-    <td align="center"><img src="./docs/images/styles/brutalism.svg" alt="Brutalism dashboard example" width="100%"><br><strong>Brutalism</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/dark-oled.svg" alt="Dark OLED dashboard example" width="100%"><br><strong>Dark OLED</strong></td>
-    <td align="center"><img src="./docs/images/styles/cyberpunk.svg" alt="Cyberpunk dashboard example" width="100%"><br><strong>Cyberpunk</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/retro-futurism.svg" alt="Retro-futurism dashboard example" width="100%"><br><strong>Retro-futurism</strong></td>
-    <td align="center"><img src="./docs/images/styles/organic-ui.svg" alt="Organic UI dashboard example" width="100%"><br><strong>Organic UI</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/maximalism.svg" alt="Maximalism dashboard example" width="100%"><br><strong>Maximalism</strong></td>
-    <td align="center"><img src="./docs/images/styles/gradient-mesh.svg" alt="Gradient Mesh dashboard example" width="100%"><br><strong>Gradient Mesh</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/aurora-ui.svg" alt="Aurora UI dashboard example" width="100%"><br><strong>Aurora UI</strong></td>
-    <td align="center"><img src="./docs/images/styles/data-dense-enterprise.svg" alt="Data-dense Enterprise UI dashboard example" width="100%"><br><strong>Data-dense Enterprise UI</strong></td>
-  </tr>
-  <tr>
-    <td align="center"><img src="./docs/images/styles/motion-first-ui.svg" alt="Motion-first UI dashboard example" width="100%"><br><strong>Motion-first UI</strong></td>
-    <td align="center"><img src="./docs/images/styles/ai-native-interfaces.svg" alt="AI-native Interfaces dashboard example" width="100%"><br><strong>AI-native Interfaces</strong></td>
+    <td align="center"><img src="./docs/images/styles/Material Design.jpeg" alt="Material Design dashboard example" width="100%"><br><strong>Material Design</strong></td>
+    <td align="center" colspan="2"><em>More catalog JPEG references can be added here as they become available.</em></td>
   </tr>
 </table>
-
-The source generator is [`scripts/generate_style_catalog_images.py`](./scripts/generate_style_catalog_images.py);
-rerun it after changing the catalog's visual references.
 
 ### Admin component coverage
 
