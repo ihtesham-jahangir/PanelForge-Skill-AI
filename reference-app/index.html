@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="PanelForge reference admin and CRM workspace">
+  <title>Northstar Operations | PanelForge Reference</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">N</span><span>Northstar</span></div>
+      <p class="eyebrow">Operations workspace</p>
+      <nav>
+        <button class="nav-item is-active" data-view="overview" type="button">Overview</button>
+        <button class="nav-item" data-view="pipeline" type="button">Pipeline</button>
+        <button class="nav-item" data-view="people" type="button">People</button>
+        <button class="nav-item" data-view="activity" type="button">Activity</button>
+      </nav>
+      <div class="sidebar-footer">
+        <label for="role-select">Preview role</label>
+        <select id="role-select">
+          <option value="manager">Manager</option>
+          <option value="member">Member</option>
+        </select>
+        <p class="muted">Tenant: Northstar Labs</p>
+      </div>
+    </aside>
+
+    <main id="main-content" class="main-content" tabindex="-1">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Monday, November 2, 2026</p>
+          <h1 id="page-title">Good morning, Maya</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-button" id="notifications-button" type="button" aria-label="3 — Open notifications">3</button>
+          <button class="avatar" type="button" aria-label="MC — Open Maya's profile">MC</button>
+        </div>
+      </header>
+
+      <div id="status-message" class="status-message" role="status" aria-live="polite"></div>
+      <section id="view-overview" class="view" aria-labelledby="overview-heading">
+        <div class="section-heading">
+          <div><p class="eyebrow">Decision support</p><h2 id="overview-heading">Revenue health</h2></div>
+          <button class="button button-primary" id="export-button" type="button">Export report</button>
+        </div>
+        <div class="metric-grid">
+          <article class="metric-card"><span>Qualified pipeline</span><strong>$248,400</strong><small class="positive">+18.4% vs last month</small></article>
+          <article class="metric-card"><span>Deals closing soon</span><strong>12</strong><small>Within next 14 days</small></article>
+          <article class="metric-card"><span>Follow-ups due</span><strong>7</strong><small class="warning">3 overdue</small></article>
+          <article class="metric-card"><span>Team conversion</span><strong>31.8%</strong><small class="positive">+4.2 points</small></article>
+        </div>
+        <div class="content-grid">
+          <article class="panel chart-panel">
+            <div class="panel-heading"><div><p class="eyebrow">Last 6 months</p><h3>Pipeline movement</h3></div><span class="tag">Live</span></div>
+            <div class="chart" role="img" aria-label="Pipeline movement rose from 120 thousand dollars to 248 thousand dollars over six months">
+              <span style="height:32%"></span><span style="height:44%"></span><span style="height:39%"></span><span style="height:58%"></span><span style="height:71%"></span><span style="height:88%"></span>
+            </div>
+            <div class="chart-labels"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div>
+          </article>
+          <article class="panel">
+            <div class="panel-heading"><div><p class="eyebrow">Needs attention</p><h3>Next actions</h3></div><span class="count">4</span></div>
+            <ul class="action-list">
+              <li><span class="dot dot-orange"></span><div><strong>Renewal call</strong><small>Acme Logistics · Today, 2:30 PM</small></div></li>
+              <li><span class="dot dot-blue"></span><div><strong>Send proposal</strong><small>Brightside Health · Today</small></div></li>
+              <li><span class="dot dot-purple"></span><div><strong>Review contract</strong><small>Orbit Systems · Tomorrow</small></div></li>
+              <li><span class="dot dot-green"></span><div><strong>Qualify lead</strong><small>Rina Patel · Wednesday</small></div></li>
+            </ul>
+          </article>
+        </div>
+        <article class="panel table-panel">
+          <div class="panel-heading"><div><p class="eyebrow">Priority deals</p><h3>Recently updated</h3></div><button class="text-button" data-view-link="pipeline" type="button">View pipeline →</button></div>
+          <div class="table-wrap" tabindex="0">
+            <table><caption class="sr-only">Recently updated priority deals</caption><thead><tr><th>Deal</th><th>Owner</th><th>Stage</th><th>Value</th><th>Updated</th></tr></thead>
+              <tbody><tr><td><strong>Acme Logistics</strong><small>Enterprise renewal</small></td><td>Maya Chen</td><td><span class="status status-blue">Negotiation</span></td><td>$84,000</td><td>12 min ago</td></tr><tr><td><strong>Brightside Health</strong><small>Growth plan</small></td><td>Jon Bell</td><td><span class="status status-purple">Proposal</span></td><td>$52,500</td><td>1 hr ago</td></tr><tr><td><strong>Orbit Systems</strong><small>Platform expansion</small></td><td>Maya Chen</td><td><span class="status status-green">Qualified</span></td><td>$31,200</td><td>3 hrs ago</td></tr></tbody>
+            </table>
+          </div>
+        </article>
+      </section>
+
+      <section id="view-pipeline" class="view hidden" aria-labelledby="pipeline-heading">
+        <div class="section-heading"><div><p class="eyebrow">Sales workflow</p><h2 id="pipeline-heading">Pipeline</h2></div><button class="button button-primary" id="new-deal-button" type="button">New deal</button></div>
+        <div class="kanban">
+          <article class="kanban-column"><div class="column-heading"><h3>Qualified</h3><span>3 · $72k</span></div><div class="deal-card"><strong>Orbit Systems</strong><span>$31,200</span><small>Maya Chen · 3d ago</small></div><div class="deal-card"><strong>Nova Retail</strong><span>$22,000</span><small>Jon Bell · 5d ago</small></div></article>
+          <article class="kanban-column"><div class="column-heading"><h3>Proposal</h3><span>2 · $84k</span></div><div class="deal-card"><strong>Brightside Health</strong><span>$52,500</span><small>Jon Bell · 1h ago</small></div></article>
+          <article class="kanban-column"><div class="column-heading"><h3>Negotiation</h3><span>1 · $84k</span></div><div class="deal-card"><strong>Acme Logistics</strong><span>$84,000</span><small>Maya Chen · 12m ago</small></div></article>
+        </div>
+      </section>
+
+      <section id="view-people" class="view hidden" aria-labelledby="people-heading">
+        <div class="section-heading"><div><p class="eyebrow">Workspace access</p><h2 id="people-heading">People</h2></div><button class="button button-primary" id="invite-button" type="button">Invite member</button></div>
+        <article class="panel table-panel"><div class="panel-heading"><div><h3>Northstar Labs members</h3><p class="muted">Server-side authorization must enforce these roles in a real implementation.</p></div></div><div class="table-wrap" tabindex="0"><table><caption class="sr-only">Northstar Labs members and roles</caption><thead><tr><th>Name</th><th>Role</th><th>Last active</th><th>Access</th></tr></thead><tbody><tr><td><strong>Maya Chen</strong><small>maya@northstar.example</small></td><td>Manager</td><td>Now</td><td><span class="status status-green">Active</span></td></tr><tr><td><strong>Jon Bell</strong><small>jon@northstar.example</small><td>Member</td><td>12 min ago</td><td><span class="status status-green">Active</span></td></tr></tbody></table></div></article>
+      </section>
+
+      <section id="view-activity" class="view hidden" aria-labelledby="activity-heading">
+        <div class="section-heading"><div><p class="eyebrow">Audit trail</p><h2 id="activity-heading">Activity</h2></div></div>
+        <article class="panel activity-panel"><ul class="activity-list"><li><strong>Maya Chen updated Acme Logistics</strong><span>Negotiation stage · 12 minutes ago</span></li><li><strong>Jon Bell added a note to Brightside Health</strong><span>“Legal review scheduled” · 1 hour ago</span></li><li><strong>System completed daily pipeline sync</strong><span>284 records checked · 3 hours ago</span></li></ul></article>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

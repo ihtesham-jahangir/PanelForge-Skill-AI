@@ -1,0 +1,22 @@
+services:
+  panelforge-reference:
+    build:
+      context: ..
+      dockerfile: reference-app/Dockerfile
+    ports:
+      - "127.0.0.1:4173:4173"
+    environment:
+      PANELFORGE_ENV: production
+      PANELFORGE_SESSION_SECRET: ${PANELFORGE_SESSION_SECRET:?set a high-entropy secret}
+      PANELFORGE_DB: /var/lib/panelforge/reference.sqlite3
+    volumes:
+      - panelforge-data:/var/lib/panelforge
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  panelforge-data:
