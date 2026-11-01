@@ -42,7 +42,11 @@ and reports verified work separately from assumptions or environment blockers.
 ## Quick start
 
 ```bash
-# Clone or copy the repository, then run the complete local workflow
+# Clone the skill repository
+git clone https://github.com/ihtesham-jahangir/PanelForge-Skill-AI.git
+cd PanelForge-Skill-AI
+
+# Run the complete local workflow
 python3 scripts/quick_start.py
 ```
 
@@ -64,6 +68,78 @@ python3 scripts/quick_start.py --skip-browser
 
 See [`GETTING_STARTED.md`](./GETTING_STARTED.md) for the shortest route from a
 feature request to the right PanelForge modules.
+
+## Install and use the skill
+
+### Option 1: Use it in this repository with GitHub Copilot
+
+The project-local Copilot skill is already included at
+[`.github/skills/panelforge-ai/SKILL.md`](./.github/skills/panelforge-ai/SKILL.md).
+Open this repository in VS Code with GitHub Copilot enabled, then invoke
+**PanelForge AI** from the agent or skill picker. You can also use the
+included [PanelForge Engineer agent](./.github/agents/panelforge-engineer.agent.md)
+for implementation work.
+
+Example request:
+
+```text
+Use PanelForge AI to design and implement a multi-tenant CRM pipeline.
+Inspect the existing stack first, preserve its architecture, enforce server-side
+RBAC and tenant isolation, and add focused tests and verification evidence.
+```
+
+### Option 2: Install into another project
+
+From this repository, run the safe project-local installer:
+
+```bash
+python3 scripts/install_skill.py /absolute/path/to/your-project
+```
+
+Preview the changes first:
+
+```bash
+python3 scripts/install_skill.py /absolute/path/to/your-project --dry-run
+```
+
+The installer creates or updates the target project's
+`.github/skills/panelforge-ai/` entry without overwriting existing files unless
+explicitly allowed by the installer options. Open the target project in VS Code
+and invoke **PanelForge AI** from its Copilot skill picker.
+
+### Option 3: Use with another coding agent
+
+Use [`SKILL.md`](./SKILL.md) as the portable orchestrator, then expose the
+relevant files through that agent's native project instruction or skill
+directory. Do not copy every module into the agent context. Load only the
+modules needed for the task:
+
+| Task | Read first |
+|---|---|
+| Discovery and requirements | [`core/project-discovery.md`](./core/project-discovery.md), [`core/requirements.md`](./core/requirements.md) |
+| Admin panel | [`modules/admin.md`](./modules/admin.md), [`modules/security.md`](./modules/security.md) |
+| User portal | [`modules/user.md`](./modules/user.md), [`modules/security.md`](./modules/security.md) |
+| CRM | [`modules/crm.md`](./modules/crm.md), [`modules/database.md`](./modules/database.md) |
+| UI and design system | [`modules/ui-ux.md`](./modules/ui-ux.md), [`design-engine/README.md`](./design-engine/README.md) |
+| Full-stack implementation | [`modules/full-stack.md`](./modules/full-stack.md), [`engineering/README.md`](./engineering/README.md) |
+| QA and release | [`quality/README.md`](./quality/README.md), [`quality/release-checklist.md`](./quality/release-checklist.md) |
+
+Agent-specific notes are available in the
+[compatibility matrix](./adapters/compatibility-matrix.md). External agent
+availability is not assumed or reported as verified without runtime evidence.
+
+### Recommended usage workflow
+
+1. **Inspect first:** identify the existing stack, conventions, tests, and current changes.
+2. **Define the outcome:** convert the request into workflows, acceptance criteria, ownership rules, and measurable checks.
+3. **Load focused guidance:** select only the relevant domain, engineering, security, and QA modules.
+4. **Implement completely:** preserve the existing stack and add related tests and documentation.
+5. **Verify locally:** run the smallest meaningful checks, then use the quick-start workflow for broader evidence.
+6. **Report honestly:** separate passed, partial, unverified, and blocked work.
+
+Every implementation should explicitly consider authorization, tenant ownership,
+accessibility, responsive behavior, loading/error/empty states, data integrity,
+and rollback impact.
 
 ## Reference application
 
@@ -97,9 +173,29 @@ product contexts:
   <tr>
     <td align="center" colspan="2"><img src="./docs/images/enterprise-crm-dashboard.svg" alt="Enterprise CRM dashboard example" width="76%"><br><strong>Enterprise CRM</strong><br><sub>Dense workflows, pipeline visibility, and role-aware actions</sub></td>
   </tr>
+  <tr>
+    <td align="center"><img src="./docs/images/admin-control-center.svg" alt="Admin control center dashboard example" width="100%"><br><strong>Admin control center</strong><br><sub>Organizations, users, roles, permissions, settings, and notifications</sub></td>
+    <td align="center"><img src="./docs/images/billing-subscriptions-dashboard.svg" alt="Billing and subscriptions dashboard example" width="100%"><br><strong>Billing &amp; subscriptions</strong><br><sub>Plans, usage, invoices, payment methods, and reports</sub></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><img src="./docs/images/audit-monitoring-dashboard.svg" alt="Audit and monitoring dashboard example" width="76%"><br><strong>Audit &amp; monitoring</strong><br><sub>Service health, alerts, immutable audit events, and operational reporting</sub></td>
+  </tr>
 </table>
 
 Browse the complete [style catalog](./design-engine/style-catalog.md).
+
+### Admin component coverage
+
+The visual examples intentionally cover the admin requirements in
+[`modules/admin.md`](./modules/admin.md):
+
+| Component family | Visual example |
+|---|---|
+| Dashboard, analytics, monitoring | [Glassmorphism](./docs/images/glassmorphism-dashboard.svg), [Audit &amp; monitoring](./docs/images/audit-monitoring-dashboard.svg) |
+| Users, roles, permissions, organizations | [Admin control center](./docs/images/admin-control-center.svg) |
+| Content, settings, notifications | [Admin control center](./docs/images/admin-control-center.svg) |
+| Subscriptions, billing, reports | [Billing &amp; subscriptions](./docs/images/billing-subscriptions-dashboard.svg) |
+| Audit logs and operational status | [Audit &amp; monitoring](./docs/images/audit-monitoring-dashboard.svg) |
 
 ## Repository map
 

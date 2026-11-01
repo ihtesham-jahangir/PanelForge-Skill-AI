@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Audit and monitoring dashboard</title>
+  <desc id="desc">An operations dashboard showing service health, alerts, immutable audit events, and reports.</desc>
+  <rect width="1200" height="680" rx="28" fill="#0b1220"/>
+  <text x="65" y="75" fill="#fff" font-family="sans-serif" font-size="30" font-weight="700">Operations &amp; audit</text>
+  <text x="65" y="108" fill="#94a3b8" font-family="sans-serif" font-size="15">Live service health · Immutable activity trail</text>
+  <rect x="65" y="145" width="250" height="120" rx="17" fill="#052e16" stroke="#166534"/><text x="95" y="185" fill="#86efac" font-family="sans-serif" font-size="13">SYSTEM STATUS</text><text x="95" y="230" fill="#dcfce7" font-family="sans-serif" font-size="25" font-weight="700">All operational</text>
+  <rect x="335" y="145" width="250" height="120" rx="17" fill="#3f1d0b" stroke="#9a3412"/><text x="365" y="185" fill="#fdba74" font-family="sans-serif" font-size="13">OPEN ALERTS</text><text x="365" y="230" fill="#ffedd5" font-family="sans-serif" font-size="25" font-weight="700">03 warnings</text>
+  <rect x="605" y="145" width="250" height="120" rx="17" fill="#172554" stroke="#1d4ed8"/><text x="635" y="185" fill="#93c5fd" font-family="sans-serif" font-size="13">REQUEST RATE</text><text x="635" y="230" fill="#dbeafe" font-family="sans-serif" font-size="25" font-weight="700">1,248 / min</text>
+  <rect x="875" y="145" width="260" height="120" rx="17" fill="#312e81" stroke="#6366f1"/><text x="905" y="185" fill="#c4b5fd" font-family="sans-serif" font-size="13">REPORTING</text><text x="905" y="230" fill="#ede9fe" font-family="sans-serif" font-size="25" font-weight="700">Export ready</text>
+  <rect x="65" y="300" width="560" height="315" rx="17" fill="#111c2f" stroke="#26364e"/>
+  <text x="95" y="345" fill="#fff" font-family="sans-serif" font-size="20" font-weight="700">Service monitoring</text><text x="95" y="375" fill="#94a3b8" font-family="sans-serif" font-size="13">Latency · last 24 hours</text>
+  <path d="M100 545 L160 510 L220 525 L280 465 L340 490 L400 430 L460 450 L520 395 L590 420" fill="none" stroke="#38bdf8" stroke-width="7" stroke-linecap="round"/>
+  <path d="M100 550 H590" stroke="#334155"/><text x="100" y="585" fill="#64748b" font-family="sans-serif" font-size="12">00:00</text><text x="300" y="585" fill="#64748b" font-family="sans-serif" font-size="12">12:00</text><text x="550" y="585" fill="#64748b" font-family="sans-serif" font-size="12">Now</text>
+  <rect x="650" y="300" width="485" height="315" rx="17" fill="#fff" stroke="#e2e8f0"/>
+  <text x="680" y="345" fill="#0f172a" font-family="sans-serif" font-size="20" font-weight="700">Immutable audit log</text><text x="980" y="345" fill="#2563eb" font-family="sans-serif" font-size="13">Export report</text>
+  <text x="680" y="390" fill="#334155" font-family="sans-serif" font-size="14">Maya Chen · deal.create</text><text x="680" y="415" fill="#64748b" font-family="sans-serif" font-size="12">Acme Logistics · 12 min ago</text>
+  <text x="680" y="460" fill="#334155" font-family="sans-serif" font-size="14">Jon Bell · role.update</text><text x="680" y="485" fill="#64748b" font-family="sans-serif" font-size="12">Northstar Labs · 1 hour ago</text>
+  <text x="680" y="530" fill="#334155" font-family="sans-serif" font-size="14">System · backup.completed</text><text x="680" y="555" fill="#64748b" font-family="sans-serif" font-size="12">Reference database · 3 hours ago</text>
+</svg>

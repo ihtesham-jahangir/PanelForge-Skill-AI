@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Billing and subscriptions dashboard</title>
+  <desc id="desc">A SaaS billing dashboard showing plan, usage, invoices, payment method, and subscription controls.</desc>
+  <rect width="1200" height="680" rx="28" fill="#f8fafc"/>
+  <text x="68" y="75" fill="#0f172a" font-family="sans-serif" font-size="30" font-weight="700">Billing &amp; subscriptions</text>
+  <text x="68" y="108" fill="#64748b" font-family="sans-serif" font-size="15">Northstar Labs · Owner controls</text>
+  <rect x="68" y="145" width="510" height="190" rx="20" fill="#172554"/>
+  <text x="102" y="190" fill="#bfdbfe" font-family="sans-serif" font-size="13">CURRENT PLAN</text><text x="102" y="240" fill="#fff" font-family="sans-serif" font-size="32" font-weight="700">Scale</text><text x="102" y="278" fill="#cbd5e1" font-family="sans-serif" font-size="15">$499 / month · Renews Nov 30</text>
+  <rect x="405" y="185" width="130" height="44" rx="9" fill="#60a5fa"/><text x="435" y="213" fill="#172554" font-family="sans-serif" font-size="13" font-weight="700">Change plan</text>
+  <rect x="605" y="145" width="527" height="190" rx="20" fill="#fff" stroke="#e2e8f0"/>
+  <text x="640" y="190" fill="#64748b" font-family="sans-serif" font-size="13">USAGE THIS CYCLE</text><text x="640" y="238" fill="#0f172a" font-family="sans-serif" font-size="30" font-weight="700">74%</text><rect x="640" y="265" width="420" height="14" rx="7" fill="#e2e8f0"/><rect x="640" y="265" width="310" height="14" rx="7" fill="#2563eb"/><text x="640" y="310" fill="#64748b" font-family="sans-serif" font-size="14">7,420 of 10,000 seats used</text>
+  <rect x="68" y="370" width="700" height="245" rx="20" fill="#fff" stroke="#e2e8f0"/>
+  <text x="102" y="415" fill="#0f172a" font-family="sans-serif" font-size="20" font-weight="700">Invoice history</text><text x="610" y="415" fill="#2563eb" font-family="sans-serif" font-size="14">Download report</text>
+  <text x="105" y="455" fill="#64748b" font-family="sans-serif" font-size="11">DATE</text><text x="315" y="455" fill="#64748b" font-family="sans-serif" font-size="11">DESCRIPTION</text><text x="555" y="455" fill="#64748b" font-family="sans-serif" font-size="11">AMOUNT</text><text x="680" y="455" fill="#64748b" font-family="sans-serif" font-size="11">STATUS</text>
+  <path d="M100 470 H730 M100 520 H730 M100 570 H730" stroke="#e2e8f0"/>
+  <text x="105" y="500" fill="#0f172a" font-family="sans-serif" font-size="14">Oct 30</text><text x="315" y="500" fill="#0f172a" font-family="sans-serif" font-size="14">Scale plan</text><text x="555" y="500" fill="#0f172a" font-family="sans-serif" font-size="14">$499</text><text x="680" y="500" fill="#16a34a" font-family="sans-serif" font-size="14">Paid</text>
+  <text x="105" y="550" fill="#0f172a" font-family="sans-serif" font-size="14">Sep 30</text><text x="315" y="550" fill="#0f172a" font-family="sans-serif" font-size="14">Scale plan</text><text x="555" y="550" fill="#0f172a" font-family="sans-serif" font-size="14">$499</text><text x="680" y="550" fill="#16a34a" font-family="sans-serif" font-size="14">Paid</text>
+  <rect x="805" y="370" width="327" height="245" rx="20" fill="#ecfdf5"/><text x="840" y="415" fill="#065f46" font-family="sans-serif" font-size="20" font-weight="700">Payment method</text><text x="840" y="470" fill="#064e3b" font-family="sans-serif" font-size="16">◉ Visa ending 4242</text><text x="840" y="510" fill="#64748b" font-family="sans-serif" font-size="14">Expires 08/29</text><rect x="840" y="545" width="170" height="40" rx="8" fill="#047857"/><text x="875" y="570" fill="#fff" font-family="sans-serif" font-size="13" font-weight="700">Update method</text>
+</svg>
