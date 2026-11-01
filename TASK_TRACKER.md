@@ -31,3 +31,9 @@
 | 26 | Deployment operations | COMPLETED | VERIFIED | Container built and verified healthy with non-root/read-only runtime; CI now executes the container health smoke test alongside backup/restore coverage |
 | 27 | Complete style catalog visuals | PARTIAL | VERIFIED | README now uses the 11 supplied JPEG references; the remaining catalog styles await source images |
 | 28 | Open-source licensing | COMPLETED | VERIFIED | Added the MIT license for PanelForge-AI Officials and linked it from the README and badge |
+| 29 | Mandatory generated application stack | COMPLETED | VERIFIED | Documented the Next.js/React/TypeScript/Tailwind frontend, FastAPI/Pydantic/SQLAlchemy/Alembic backend, PostgreSQL default, REST boundary, override rule, and executable-project requirement |
+| 30 | Stack enforcement surfaces | COMPLETED | VERIFIED | Wired the mandatory stack into the Copilot agent, project instructions, discovery prompt, architecture standards, engineering guidance, architecture template, and feature-delivery workflow |
+| 31 | Executable full-stack blueprint | COMPLETED | VERIFIED | Added a required-stack project structure, API, database, security, operations, and verification checklist for new applications |
+| 32 | Stack policy reporting | COMPLETED | VERIFIED | Quick-start now reports the mandatory new-application stack and explicit existing-project/override rules; project briefs capture the same decision |
+| 33 | Full-stack project scaffolding | COMPLETED | VERIFIED | Added a non-destructive scaffold command for separate Next.js and FastAPI applications, Tailwind configuration, PostgreSQL Compose health checks, Alembic configuration, environment placeholders, API wiring, and health testing |
+| 34 | Final local completion verification | COMPLETED | VERIFIED | Full quick-start workflow passed all five checks, including browser/accessibility QA; external runtime, authorized ZAP, remote production, and missing style JPEGs remain bounded |

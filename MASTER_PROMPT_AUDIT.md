@@ -14,7 +14,7 @@ The repository is a working documentation-first skill package with native GitHub
 | Domain guidance and templates | 100% locally verified |
 | Strict documentation/tooling acceptance criteria | 100% locally verified |
 | External specialist research and compatibility verification | 80% locally verified; external agent runtimes and ZAP remain unavailable |
-| Runtime/application implementation | Reference UI and SQLite API fully locally verified; remote production evidence remains conditional |
+| Runtime/application implementation | Reference UI and SQLite API fully locally verified; mandatory full-stack blueprint/scaffold locally verified; remote production evidence remains conditional |
 
 These are engineering estimates, not test coverage percentages. They reflect fulfilled acceptance criteria, not file count.
 
@@ -48,6 +48,7 @@ These are engineering estimates, not test coverage percentages. They reflect ful
 
 1. Verify discovery and invocation inside Claude Code, Codex, Cursor, and Windsurf.
 2. Run OWASP ZAP against an explicitly authorized deployed target.
+3. Add the remaining 15 style JPEG references if complete visual coverage is required.
 
 ### Completed in this pass
 
@@ -60,6 +61,16 @@ These are engineering estimates, not test coverage percentages. They reflect ful
 1. Execute the container deployment in remote authorized infrastructure, restore/rollback drills, browser/performance checks, and production verification.
 2. Capture screenshots, browser-console results, performance budgets, and release evidence.
 3. Verify deployment, monitoring, backup, recovery, and rollback in the consuming application.
+
+### Completed locally after the audit
+
+1. Enforced the mandatory Next.js/React/TypeScript/Tailwind CSS plus
+   Python/FastAPI/Pydantic/SQLAlchemy/Alembic/PostgreSQL default across skill,
+   agent, prompt, architecture, engineering, template, and workflow surfaces.
+2. Added a non-destructive full-stack scaffold and verified its dry-run,
+   generation, overwrite protection, and health-test structure.
+3. Re-ran the complete quick-start workflow: 5 checks passed, including
+   browser and accessibility QA.
 
 ## Current blockers
 

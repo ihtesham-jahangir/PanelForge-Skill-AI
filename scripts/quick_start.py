@@ -14,6 +14,12 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_APPLICATION_STACK = {
+    "frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "backend": ["Python", "FastAPI", "Pydantic", "SQLAlchemy 2.0", "Alembic"],
+    "database": ["PostgreSQL"],
+    "integration": "Separate applications connected by documented REST APIs",
+}
 
 
 def detect_stack() -> list[str]:
@@ -152,6 +158,12 @@ def main() -> int:
     productivity_score = round((verified_claims / len(claims)) * 100)
     report = {
         "stack": detect_stack(),
+        "application_stack_policy": {
+            "status": "default-for-new-applications",
+            "technologies": DEFAULT_APPLICATION_STACK,
+            "existing_project_rule": "Inspect first; explain migration implications before changing architecture",
+            "override_rule": "Change the default only when the user explicitly requests another stack",
+        },
         "steps": steps,
         "productivity": {
             "score": productivity_score,
@@ -167,6 +179,7 @@ def main() -> int:
     else:
         print(f"PanelForge quick start: {report['status']} ({report['summary']})")
         print(f"Detected stack: {', '.join(report['stack']) or 'unknown'}")
+        print("New application default: Next.js/React/TypeScript/Tailwind CSS + Python/FastAPI + PostgreSQL")
         print(f"Productivity coverage: {productivity_score}% ({', '.join(capabilities) or 'none'})")
         for step in steps:
             print(f"- {step['status'].upper()}: {step['name']}")

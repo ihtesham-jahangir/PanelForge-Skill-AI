@@ -40,6 +40,12 @@
 | Style catalog image inventory | PASS — README uses the 11 supplied JPEG references; no generated style SVGs remain |
 | `python3 tests/validate_docs.py` | PASS — README JPEG gallery links validated |
 | `LICENSE` and README license section | PASS — MIT license file, badge, and copyright holder link are present |
+| Mandatory generated stack guidance | PASS — canonical skill, Copilot skill, full-stack module, and README document the required default architecture and explicit override rule |
+| Stack enforcement surfaces | PASS — agent, instructions, prompt, architecture, engineering, template, and delivery workflow guidance updated |
+| Full-stack blueprint | PASS — required frontend/backend/database structure, API boundary, security, operations, and verification checklist added and linked |
+| Stack policy reporting | PASS — quick-start exposes the mandatory stack policy and dedicated tests verify its technologies and REST boundary |
+| Full-stack project scaffolding | PASS — scaffold command creates the mandated application boundaries, Tailwind and Alembic configuration, PostgreSQL health checks, API wiring, and refuses to overwrite existing files |
+| `python3 scripts/quick_start.py` | PASS — 5 checks passed, including documentation, repository tests, operations drill, reference-app health, and browser/accessibility QA |
 
 ## Scope
 

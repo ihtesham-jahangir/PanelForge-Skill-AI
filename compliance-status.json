@@ -19,6 +19,25 @@
         "tests/test_operations.py"
       ]
     },
+    "generated_application_stack": {
+      "status": "verified",
+      "evidence": [
+        "SKILL.md",
+        "templates/full-stack-blueprint.md",
+        "scripts/scaffold_project.py",
+        "tests/test_scaffold_project.py"
+      ],
+      "gap": "Generated projects are starter scaffolds; domain-specific authorization, tenancy, and business workflows still require implementation."
+    },
+    "style_catalog_visuals": {
+      "status": "partial",
+      "evidence": [
+        "design-engine/style-catalog.md",
+        "README.md",
+        "docs/images/styles/"
+      ],
+      "gap": "The catalog documents 26 styles, but 11 supplied JPEG references are currently available."
+    },
     "browser_qa": {
       "status": "verified",
       "evidence": [

@@ -8,7 +8,7 @@ disable-model-invocation: false
 
 # PanelForge AI
 
-Use this skill for production-oriented admin panels, user portals, CRM applications, and SaaS management systems.
+Use this skill for production-oriented admin panels, user portals, CRM applications, and SaaS management systems. New web applications default to Next.js, React, TypeScript, Tailwind CSS, Python, FastAPI, and PostgreSQL; do not ask the user to select a framework.
 
 ## Procedure
 
@@ -24,5 +24,14 @@ Use this skill for production-oriented admin panels, user portals, CRM applicati
 5. Enforce authorization and tenant ownership server-side. UI hiding is not security.
 6. Implement focused changes, including directly related tests and documentation.
 7. Run the narrowest meaningful validation command and report actual evidence.
+8. For new applications, generate separate `frontend/` and `backend/` applications:
+   Next.js/React/TypeScript/Tailwind CSS plus Python/FastAPI/Pydantic/SQLAlchemy
+   2.0/Alembic, with PostgreSQL and documented REST APIs.
+9. Keep business logic, authentication, authorization, and database operations
+   in FastAPI; generate executable code, tests, security handling, and
+   production-oriented configuration rather than static mockups.
+10. If an existing project uses another stack, inspect it and explain migration
+    implications before changing it. Override the default only when explicitly
+    requested by the user.
 
 The canonical expanded documentation is [`../../../SKILL.md`](../../../SKILL.md). External specialists are optional; follow [`../../../orchestration/README.md`](../../../orchestration/README.md) and never fabricate availability.

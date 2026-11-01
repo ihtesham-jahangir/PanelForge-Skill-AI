@@ -11,7 +11,7 @@ Load only the module needed for the request:
 | Admin | `modules/admin.md` |
 | User portal | `modules/user.md` |
 | CRM | `modules/crm.md` |
-| Full stack | `modules/full-stack.md` |
+| Full stack | `modules/full-stack.md`, `templates/full-stack-blueprint.md` |
 | Data and tenants | `modules/database.md` |
 | Security | `modules/security.md` |
 | QA and release | `quality/README.md`, `quality/production-readiness.md` |

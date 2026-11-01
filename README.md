@@ -141,6 +141,25 @@ Every implementation should explicitly consider authorization, tenant ownership,
 accessibility, responsive behavior, loading/error/empty states, data integrity,
 and rollback impact.
 
+### Default generated application stack
+
+New websites and web applications generated with PanelForge use this default
+full-stack architecture:
+
+| Layer | Required technology |
+|---|---|
+| Frontend | Next.js, React, TypeScript, Tailwind CSS |
+| Backend | Python, FastAPI, Pydantic, SQLAlchemy 2.0, Alembic |
+| Database | PostgreSQL |
+| Integration | Separate frontend/backend applications connected by documented REST APIs |
+
+FastAPI owns business logic, authentication, authorization, validation, and
+database operations. Generated projects include executable code, responsive
+accessible components, security/error handling, tests, Docker configuration,
+and environment documentation. Existing projects are inspected first;
+migration implications are explained before any architecture change. The
+default is overridden only when the user explicitly requests another stack.
+
 ## Reference application
 
 The included [reference app](./reference-app/) demonstrates a responsive,
@@ -240,7 +259,7 @@ The visual examples intentionally cover the admin requirements in
 | [`workflows/`](./workflows/) | Repeatable discovery, build, QA, and release workflows |
 | [`quality/`](./quality/) | Verification, production readiness, and release evidence |
 | [`adapters/`](./adapters/) | Copilot, Claude, Codex, Cursor, Windsurf, and generic guidance |
-| [`templates/`](./templates/) | Reusable plans, matrices, briefs, and handoff artifacts |
+| [`templates/`](./templates/) | Reusable plans, matrices, briefs, handoff artifacts, and the [full-stack blueprint](./templates/full-stack-blueprint.md) |
 | [`.github/`](./.github/) | Native Copilot skill, prompts, agent, hooks, and CI |
 | [`scripts/`](./scripts/) | Installer, validation, quick-start, operations, and specialist wrappers |
 | [`qa/browser/`](./qa/browser/) | Optional Playwright, axe-core, and Lighthouse QA |
@@ -258,6 +277,18 @@ To install the skill into another project:
 ```bash
 python3 scripts/install_skill.py /path/to/target-project
 ```
+
+To generate a non-destructive starter structure for a new application:
+
+```bash
+python3 scripts/scaffold_project.py /absolute/path/to/new-project
+python3 scripts/scaffold_project.py /absolute/path/to/new-project --dry-run
+```
+
+The scaffold creates separate Next.js and FastAPI applications, PostgreSQL
+Compose configuration, environment placeholders, and a health test. It refuses
+to overwrite existing files; add domain authorization, tenant isolation,
+migrations, and feature tests before production use.
 
 ## Verification and boundaries
 

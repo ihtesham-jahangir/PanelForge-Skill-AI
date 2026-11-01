@@ -14,5 +14,12 @@ Return:
 4. Accessibility, responsive, performance, and security constraints.
 5. Explicit acceptance criteria and a focused verification plan.
 6. Open decisions and assumptions.
+7. Stack decision: for a new web application, record the mandatory
+   Next.js/React/TypeScript/Tailwind CSS frontend, Python/FastAPI/Pydantic/
+   SQLAlchemy 2.0/Alembic backend, PostgreSQL database, separate application
+   boundary, and documented REST API. For an existing application, record the
+   current stack and migration implications instead.
 
-Do not implement code in this prompt. Do not invent framework conventions before inspecting the target repository.
+Do not implement code in this prompt. Do not ask the user to choose a
+framework. Do not invent existing-project conventions before inspecting the
+target repository.
