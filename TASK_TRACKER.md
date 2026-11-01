@@ -29,3 +29,5 @@
 | 24 | Quick-start productivity workflow | COMPLETED | VERIFIED | Stack detection, focused validation, reference-app health, optional browser QA, and concise JSON/text reporting implemented |
 | 25 | Reference application | COMPLETED | VERIFIED | UI, SQLite API, auth/RBAC, tenant isolation, audit logging, security headers, production-secret guard, and tests added |
 | 26 | Deployment operations | COMPLETED | VERIFIED | Container built and verified healthy with non-root/read-only runtime; CI now executes the container health smoke test alongside backup/restore coverage |
+| 27 | Complete style catalog visuals | COMPLETED | VERIFIED | Generated 26 accessible SVG dashboard references, linked every catalog style in the README, and added a reproducible generator |
+| 28 | Open-source licensing | COMPLETED | VERIFIED | Added the MIT license for PanelForge-AI Officials and linked it from the README and badge |
