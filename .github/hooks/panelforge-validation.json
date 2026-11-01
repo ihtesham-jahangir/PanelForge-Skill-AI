@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "type": "command",
+        "command": "python3 tests/run_validation_hook.py",
+        "timeout": 30
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "assessment_date": "2026-11-01",
+  "scope": "PanelForge skill package and included reference application",
+  "areas": {
+    "local_skill": {
+      "status": "verified",
+      "evidence": [
+        "SKILL.md",
+        "tests/validate_docs.py",
+        "scripts/quick_start.py"
+      ]
+    },
+    "reference_application": {
+      "status": "verified",
+      "evidence": [
+        "reference-app/",
+        "tests/test_reference_api.py",
+        "tests/test_operations.py"
+      ]
+    },
+    "browser_qa": {
+      "status": "verified",
+      "evidence": [
+        "ENVIRONMENT_VERIFICATION.md",
+        "VALIDATION_REPORT.md",
+        "qa/browser/"
+      ],
+      "gap": "Local Playwright, axe-core, and Lighthouse verification passed; remote production performance evidence remains unavailable."
+    },
+    "external_agents": {
+      "status": "unverified",
+      "evidence": [
+        "adapters/compatibility-matrix.md",
+        "scripts/verify_agent_runtimes.py"
+      ],
+      "gap": "Inventory is reproducible, but agent-specific discovery and invocation require each external runtime."
+    },
+    "remote_production": {
+      "status": "blocked",
+      "evidence": [
+        "reference-app/DEPLOYMENT.md",
+        "reference-app/OPERATIONS.md",
+        "scripts/run_zap_baseline.py"
+      ],
+      "gap": "Authorized infrastructure, HTTPS, monitoring, and rollback environment are not available in this workspace."
+    }
+  }
+}

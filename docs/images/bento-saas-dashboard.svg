@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Bento SaaS dashboard example</title>
+  <desc id="desc">A light bento grid dashboard with modular cards, charts, and product health indicators.</desc>
+  <rect width="1200" height="680" rx="28" fill="#f8fafc"/>
+  <text x="65" y="82" fill="#0f172a" font-family="sans-serif" font-size="30" font-weight="700">Workspace health</text>
+  <text x="65" y="115" fill="#64748b" font-family="sans-serif" font-size="15">A modular bento layout for fast operational scanning</text>
+  <rect x="65" y="155" width="350" height="210" rx="22" fill="#0f172a"/>
+  <text x="95" y="200" fill="#94a3b8" font-family="sans-serif" font-size="14">MONTHLY ACTIVE USERS</text>
+  <text x="95" y="270" fill="#fff" font-family="sans-serif" font-size="50" font-weight="700">24.8k</text>
+  <text x="95" y="315" fill="#4ade80" font-family="sans-serif" font-size="15">↗ 18.4% this month</text>
+  <rect x="440" y="155" width="330" height="210" rx="22" fill="#dbeafe"/>
+  <text x="470" y="200" fill="#1e3a8a" font-family="sans-serif" font-size="14">CONVERSION</text>
+  <text x="470" y="275" fill="#172554" font-family="sans-serif" font-size="50" font-weight="700">31.8%</text>
+  <circle cx="690" cy="250" r="62" fill="none" stroke="#bfdbfe" stroke-width="18"/>
+  <path d="M690 188 A62 62 0 1 1 635 278" fill="none" stroke="#2563eb" stroke-width="18"/>
+  <rect x="795" y="155" width="340" height="210" rx="22" fill="#fef3c7"/>
+  <text x="825" y="200" fill="#92400e" font-family="sans-serif" font-size="14">OPEN RISKS</text>
+  <text x="825" y="275" fill="#451a03" font-family="sans-serif" font-size="50" font-weight="700">07</text>
+  <text x="825" y="315" fill="#b45309" font-family="sans-serif" font-size="15">3 need attention today</text>
+  <rect x="65" y="395" width="700" height="220" rx="22" fill="#fff" stroke="#e2e8f0"/>
+  <text x="95" y="440" fill="#0f172a" font-family="sans-serif" font-size="19" font-weight="700">Adoption trend</text>
+  <path d="M100 560 L180 530 L260 545 L340 490 L420 505 L500 450 L580 475 L660 420 L735 435" fill="none" stroke="#0f766e" stroke-width="7" stroke-linecap="round"/>
+  <rect x="795" y="395" width="340" height="220" rx="22" fill="#ecfdf5"/>
+  <text x="825" y="440" fill="#065f46" font-family="sans-serif" font-size="19" font-weight="700">System status</text>
+  <text x="825" y="500" fill="#047857" font-family="sans-serif" font-size="16">● All services operational</text>
+  <text x="825" y="545" fill="#64748b" font-family="sans-serif" font-size="14">Last checked 2 minutes ago</text>
+</svg>

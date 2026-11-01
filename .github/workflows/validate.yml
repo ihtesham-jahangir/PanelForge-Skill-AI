@@ -1,0 +1,39 @@
+name: Validate PanelForge
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  documentation:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Validate documentation
+        run: python tests/validate_docs.py
+      - name: Check validation scripts
+        run: python -m py_compile tests/validate_docs.py tests/run_validation_hook.py scripts/install_skill.py scripts/backup_reference_db.py scripts/run_operations_drill.py scripts/verify_container.py scripts/verify_agent_runtimes.py scripts/run_zap_baseline.py scripts/quick_start.py
+      - name: Check installer dry run
+        run: python scripts/install_skill.py "$RUNNER_TEMP/panelforge-target" --dry-run
+      - name: Run smoke tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Run operations drill
+        run: python scripts/run_operations_drill.py
+      - name: Run quick start
+        run: python scripts/quick_start.py --skip-browser
+      - name: Verify specialist environment report
+        run: python scripts/verify_specialists.py
+      - name: Verify external agent inventory
+        run: python scripts/verify_agent_runtimes.py
+      - name: Build reference container
+        run: docker build -t panelforge-reference:ci -f reference-app/Dockerfile .
+      - name: Verify reference container
+        run: python scripts/verify_container.py

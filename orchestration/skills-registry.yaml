@@ -1,0 +1,25 @@
+skills:
+  - id: ui-ux-pro-max
+    category: design
+    source: https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+    status: optional-unverified
+  - id: gstack
+    category: planning-review-qa
+    source: https://github.com/garrytan/gstack
+    status: optional-unverified
+  - id: playwright
+    category: browser-testing
+    source: https://playwright.dev/
+    status: optional-tool
+  - id: axe-core
+    category: accessibility
+    source: https://github.com/dequelabs/axe-core
+    status: optional-tool
+  - id: lighthouse
+    category: performance
+    source: https://developer.chrome.com/docs/lighthouse/
+    status: optional-tool
+  - id: owasp-zap
+    category: security-testing
+    source: https://www.zaproxy.org/
+    status: optional-tool

@@ -1,0 +1,44 @@
+name: Optional browser QA
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qa/browser
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Install browser QA dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Run browser QA
+        run: npm test
+      - name: Run Lighthouse
+        run: |
+          PANELFORGE_DB=/tmp/panelforge-lighthouse.sqlite3 \
+          PANELFORGE_SESSION_SECRET=lighthouse-test-secret \
+          PANELFORGE_RATE_LIMIT_MAX=500 \
+          python3 -c "import sys; sys.path.insert(0, '../../reference-app'); import server; server.run(port=4175)" >/tmp/panelforge-lighthouse.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          for attempt in $(seq 1 30); do
+            curl --fail --silent http://127.0.0.1:4175/api/health && break
+            sleep 1
+          done
+          npm run lighthouse

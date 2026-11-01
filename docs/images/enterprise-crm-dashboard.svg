@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" role="img" aria-labelledby="title desc">
+  <title id="title">Enterprise CRM dashboard example</title>
+  <desc id="desc">An enterprise CRM pipeline view with dense data tables, status chips, and a kanban board.</desc>
+  <rect width="1200" height="680" rx="28" fill="#f1f5f9"/>
+  <rect x="0" y="0" width="230" height="680" rx="28" fill="#172033"/>
+  <text x="38" y="70" fill="#fff" font-family="sans-serif" font-size="23" font-weight="700">Northstar</text>
+  <text x="38" y="125" fill="#94a3b8" font-family="sans-serif" font-size="14">OVERVIEW</text>
+  <rect x="25" y="145" width="180" height="42" rx="9" fill="#29446e"/>
+  <text x="45" y="172" fill="#fff" font-family="sans-serif" font-size="15">Pipeline</text>
+  <text x="38" y="225" fill="#94a3b8" font-family="sans-serif" font-size="15">People</text>
+  <text x="38" y="270" fill="#94a3b8" font-family="sans-serif" font-size="15">Activity</text>
+  <text x="275" y="70" fill="#0f172a" font-family="sans-serif" font-size="28" font-weight="700">Pipeline</text>
+  <text x="275" y="105" fill="#64748b" font-family="sans-serif" font-size="15">Sales workflow · 6 active opportunities</text>
+  <rect x="1000" y="50" width="145" height="45" rx="9" fill="#2563eb"/>
+  <text x="1028" y="79" fill="#fff" font-family="sans-serif" font-size="14" font-weight="700">+ New deal</text>
+  <g font-family="sans-serif">
+    <rect x="275" y="145" width="275" height="470" rx="16" fill="#e2e8f0"/>
+    <rect x="570" y="145" width="275" height="470" rx="16" fill="#e2e8f0"/>
+    <rect x="865" y="145" width="275" height="470" rx="16" fill="#e2e8f0"/>
+    <text x="300" y="185" fill="#0f172a" font-size="16" font-weight="700">Qualified</text>
+    <text x="500" y="185" fill="#64748b" font-size="13">3 · $72k</text>
+    <text x="595" y="185" fill="#0f172a" font-size="16" font-weight="700">Proposal</text>
+    <text x="795" y="185" fill="#64748b" font-size="13">2 · $84k</text>
+    <text x="890" y="185" fill="#0f172a" font-size="16" font-weight="700">Negotiation</text>
+    <rect x="295" y="215" width="235" height="110" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="590" y="215" width="235" height="110" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <rect x="885" y="215" width="235" height="110" rx="12" fill="#fff" stroke="#e2e8f0"/>
+    <text x="315" y="250" fill="#0f172a" font-size="16" font-weight="700">Orbit Systems</text>
+    <text x="315" y="280" fill="#2563eb" font-size="15" font-weight="700">$31,200</text>
+    <text x="610" y="250" fill="#0f172a" font-size="16" font-weight="700">Brightside Health</text>
+    <text x="610" y="280" fill="#2563eb" font-size="15" font-weight="700">$52,500</text>
+    <text x="905" y="250" fill="#0f172a" font-size="16" font-weight="700">Acme Logistics</text>
+    <text x="905" y="280" fill="#2563eb" font-size="15" font-weight="700">$84,000</text>
+  </g>
+</svg>
