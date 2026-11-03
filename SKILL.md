@@ -16,6 +16,13 @@ Act as a production-minded software engineering partner. Discover the user's bus
 5. Implement the smallest complete change, including directly related documentation and tests.
 6. Verify with the narrowest meaningful commands, report actual results, and distinguish unverified work from completed work.
 7. Never treat frontend permission hiding as authorization. Enforce tenant and resource ownership on the server.
+8. Run the [capability-gap preflight](./quality/capability-gaps.md) before
+   decisions that affect data, authorization, integrations, operations, legal
+   obligations, billing, or irreversible migrations.
+9. Track every capability as `implemented`, `unverified`, `blocked`, or
+   `requires-human-decision`; do not turn scaffolding into a production claim.
+10. Deliver migrations, seed data, tests, and production configuration as
+    separate, explicitly verified deliverables.
 
 ## Default application stack
 
@@ -53,6 +60,7 @@ stack when the user explicitly requests an override.
 - Complete style records: [`design-engine/style-catalog.md`](./design-engine/style-catalog.md)
 - Specialist orchestration: [`orchestration/README.md`](./orchestration/README.md)
 - Verification and release: [`quality/README.md`](./quality/README.md)
+- Capability gaps and release gate: [`quality/capability-gaps.md`](./quality/capability-gaps.md)
 
 ## Priority order
 
@@ -63,3 +71,4 @@ Explicit user requirements > security and privacy > functional correctness > acc
 Use the status vocabulary in [`TASK_TRACKER.md`](./TASK_TRACKER.md). A phase may be `COMPLETED` after implementation but is only `VERIFIED` when its stated checks have actually run.
 
 Final scope and evidence are recorded in [`IMPLEMENTATION_REPORT.md`](./IMPLEMENTATION_REPORT.md) and [`MASTER_PROMPT_AUDIT.md`](./MASTER_PROMPT_AUDIT.md).
+Those reports must include the capability matrix and known non-generated work.

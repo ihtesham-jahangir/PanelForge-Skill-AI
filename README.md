@@ -11,6 +11,12 @@
 </div>
 
 <p align="center">
+  <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI"><img src="https://img.shields.io/github/stars/ihtesham-jahangir/PanelForge-Skill-AI?style=flat" alt="GitHub stars"></a>
+  <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/network/members"><img src="https://img.shields.io/github/forks/ihtesham-jahangir/PanelForge-Skill-AI?style=flat" alt="GitHub forks"></a>
+  <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/watchers"><img src="https://img.shields.io/github/watchers/ihtesham-jahangir/PanelForge-Skill-AI?style=flat" alt="GitHub watchers"></a>
+  <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/issues"><img src="https://img.shields.io/github/issues/ihtesham-jahangir/PanelForge-Skill-AI?style=flat" alt="Open GitHub issues"></a>
+  <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/releases"><img src="https://img.shields.io/github/downloads/ihtesham-jahangir/PanelForge-Skill-AI/total?style=flat" alt="GitHub release downloads"></a>
+  <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/commits/main"><img src="https://img.shields.io/github/last-commit/ihtesham-jahangir/PanelForge-Skill-AI?style=flat" alt="Latest GitHub commit"></a>
   <img src="https://img.shields.io/badge/status-local%20workflow%20verified-16a34a" alt="Local workflow verified">
   <img src="https://img.shields.io/badge/tests-15%20passed-2563eb" alt="15 tests passed">
   <img src="https://img.shields.io/badge/browser%20QA-12%20passed-7c3aed" alt="12 browser tests passed">
@@ -27,6 +33,36 @@ accessibility, testing, operations, and release evidence.
 It is designed to be useful in an existing repository, not just for greenfield
 mockups. The skill preserves the current stack, loads only relevant guidance,
 and reports verified work separately from assumptions or environment blockers.
+
+## CRM product coverage
+
+PanelForge documents a complete three-interface CRM foundation:
+
+- **Sales/workspace panel:** leads, contacts, activities, opportunities,
+  pipelines, communications, and reporting.
+- **Admin panel:** IAM, RBAC, tenants, settings, integrations, audit logs, and
+  controlled data operations.
+- **Customer portal:** profiles, notifications, billing, documents, support
+  tickets, account security, and customer-visible activity.
+
+The [CRM module](./modules/crm.md), [admin module](./modules/admin.md), and
+[user module](./modules/user.md) define the workflows, API boundaries,
+ownership rules, and verification gates. They do not claim that external
+providers, production infrastructure, compliance, migrations, or cloud
+deployment have been configured.
+
+## GitHub repository metrics
+
+The badges above update from GitHub and show repository stars, forks, watchers,
+open issues, latest commit, and **release-asset downloads**.
+
+GitHub does not provide a public, all-time counter for `git clone` operations
+or ZIP/source-archive downloads in a README badge. Repository owners can view
+those traffic numbers, including clones and visitors, at
+[Insights → Traffic](https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/graphs/traffic).
+Release downloads are tracked separately on the
+[Releases page](https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/releases);
+the download badge remains zero until release assets are published.
 
 ## Why teams use it
 
@@ -294,7 +330,7 @@ migrations, and feature tests before production use.
 
 Current local evidence:
 
-- Documentation validation: 88 Markdown files.
+- Documentation validation: 90 Markdown files.
 - Repository tests: 15 passed.
 - Playwright/axe browser QA: 12 desktop/mobile tests passed.
 - Lighthouse: performance 100, accessibility 100, best practices 96, SEO 100.

@@ -12,3 +12,9 @@ Convert each request into:
 - Unit, integration, API, and end-to-end verification.
 
 Use explicit language such as “a member can update only records belonging to their organization” rather than UI-only descriptions. Flag unresolved business decisions instead of silently choosing behavior that can affect data or permissions.
+
+Before implementation, run the [capability-gap preflight](../quality/capability-gaps.md)
+for product terminology, roles, tenancy, retention, integrations, deployment,
+and irreversible data operations. Record each answer, assumption, or
+`requires-human-decision` state. The resulting capability matrix is part of the
+acceptance criteria.

@@ -46,6 +46,11 @@
 | Stack policy reporting | PASS — quick-start exposes the mandatory stack policy and dedicated tests verify its technologies and REST boundary |
 | Full-stack project scaffolding | PASS — scaffold command creates the mandated application boundaries, Tailwind and Alembic configuration, PostgreSQL health checks, API wiring, and refuses to overwrite existing files |
 | `python3 scripts/quick_start.py` | PASS — 5 checks passed, including documentation, repository tests, operations drill, reference-app health, and browser/accessibility QA |
+| `python3 tests/validate_docs.py` | PASS — capability-gap release gate and cross-module links validated across 90 Markdown files |
+| `python3 tests/validate_docs.py` | PASS — universal CRM architecture, API, schema, project structure, deployment boundaries, and verification guidance validated |
+| `python3 tests/validate_docs.py` | PASS — admin IAM, tenant governance, audit, data operations, API, route structure, and verification guidance validated |
+| `python3 tests/validate_docs.py` | PASS — three-interface CRM, customer portal ownership/security, database visibility, and QA evidence guidance validated |
+| `python3 tests/validate_docs.py` | PASS — GitHub README metrics, release-download explanation, CRM overview, and updated documentation links validated |
 
 ## Scope
 
