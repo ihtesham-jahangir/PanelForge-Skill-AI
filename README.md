@@ -6,6 +6,7 @@
     <a href="./GETTING_STARTED.md">Get started</a> ·
     <a href="./SKILL.md">Read the skill</a> ·
     <a href="./reference-app/">Run the reference app</a> ·
+    <a href="https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/releases">Releases</a> ·
     <a href="./MASTER_PROMPT_AUDIT.md">View audit</a>
   </p>
 </div>
@@ -61,7 +62,9 @@ or ZIP/source-archive downloads in a README badge. Repository owners can view
 those traffic numbers, including clones and visitors, at
 [Insights → Traffic](https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/graphs/traffic).
 Release downloads are tracked separately on the
-[Releases page](https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/releases);
+[GitHub Releases page](https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/releases).
+Download the latest tagged version from
+[Releases](https://github.com/ihtesham-jahangir/PanelForge-Skill-AI/releases);
 the download badge remains zero until release assets are published.
 
 ## Why teams use it

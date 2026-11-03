@@ -42,3 +42,4 @@
 | 37 | Admin governance blueprint | COMPLETED | VERIFIED | Expanded admin guidance with IAM, tenant controls, integrations, audit/security monitoring, safe data operations, async jobs, admin APIs, isolated routes, and high-risk verification gates |
 | 38 | Three-interface CRM and client portal | COMPLETED | VERIFIED | Added sales/workspace, admin, and customer portal boundaries; documented portal lifecycle, ownership, IDOR, billing/document/ticket controls, and structured QA evidence requirements |
 | 39 | GitHub README metrics and CRM overview | COMPLETED | VERIFIED | Added live repository badges, release-download guidance, owner-only traffic explanation, and three-interface CRM coverage summary |
+| 40 | GitHub Releases README link | COMPLETED | VERIFIED | Added the repository Releases page to README navigation and download guidance |

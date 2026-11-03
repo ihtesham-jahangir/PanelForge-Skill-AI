@@ -51,6 +51,7 @@
 | `python3 tests/validate_docs.py` | PASS — admin IAM, tenant governance, audit, data operations, API, route structure, and verification guidance validated |
 | `python3 tests/validate_docs.py` | PASS — three-interface CRM, customer portal ownership/security, database visibility, and QA evidence guidance validated |
 | `python3 tests/validate_docs.py` | PASS — GitHub README metrics, release-download explanation, CRM overview, and updated documentation links validated |
+| `python3 tests/validate_docs.py` | PASS — GitHub Releases links in README navigation and download guidance validated |
 
 ## Scope
 
